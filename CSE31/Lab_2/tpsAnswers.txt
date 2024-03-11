@@ -1,0 +1,29 @@
+* TPS 1 *
+1. Albert Ho, Alan Li, Nguyen Tran, Han Ngo
+2. 
+- https://www.gdbtutorial.com/tutorial/how-install-gdb 
+- https://lldb.llvm.org/use/tutorial.html
+- https://opensource.apple.com/source/lldb/lldb-310.2.36/www/tutorial.html
+
+* TPS 2 * 
+1. gcc -g punishment.c -o punish
+2. lldb punish
+3. run
+4. 
+    - Instruct the debugger to stop in a location of the code, giving control over the debugger to them. 
+    - breakpoint set --file punish --line 29
+5. next
+6. p variable_name
+7. continue
+8. quit
+
+* TPS 3 *
+1. 4 variables
+2. All the values of the variables should be random numbers. This is because when you initialize the variables, c would put random numbers that were previously on the heap.
+3. You would initialize the variables with actual numbers.
+4. x = 0x16f577408, y = 0x16f577404
+5. px value = 77208888, px address = 0x16b86f408, py value = 1, py address = 0x16b86f404
+6. 45645156, 1, 1831318816, 1, 1831318592, 1, -1893022620, 957218817, 45645156, 1
+7. They are the same.
+8. This makes sense because the arr would always point to the first value no matter what. Arr[0] would just specify what point the pointer is pointing to.
+
