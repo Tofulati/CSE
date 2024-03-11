@@ -1,0 +1,40 @@
+* TPS 1 *
+1. I expect the program to print 0x2.
+2. I think that the program would print out 41.
+3. 44434241, not the right hex value, but hex values side by side.
+4. It prints 2, I'm not suprised by this response since its supposed to be another value.
+5
+    a. There is one array allocated in the program.
+    b. They are not pointing to the same location.
+    c. This is true: 0x16b22b438; 0x16b22b448.
+
+6. The difference in addresses between two consecutive elements is 4 because they are integers.
+7. Draw out.
+8. The difference in addresses between two consecutive elements is 1 because they are chars.
+9. Draw out.
+10. Char pointer increases by index of 1 and int pointer increases by index of 4.
+
+* TPS 2 * 
+1. Line 8 allocates a 2d array using the size of an integer pointer by integer pointer. (8x8)
+2. You would create a pointer pointing to the first value of the 2d array and go through the i values.
+3. 
+    for (i = 0; i < n; i++) {
+		*(arr + i) = (int*)malloc(n * sizeof(int));
+		for (j = 0; j < n; j++) {
+			*(*(arr + i) + j) = 0;
+		}
+	}
+4. We need to pass in the size beacuse the print value looks for a denoting char, which is not explicitly written in the arrary allocation.
+5. 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+6. 
+1 0 0 0 0 
+0 2 0 0 0 
+0 0 3 0 0 
+0 0 0 4 0 
+0 0 0 0 5  
+7. Correct. 

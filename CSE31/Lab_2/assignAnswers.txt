@@ -1,0 +1,10 @@
+* Assignment 1 *
+1. The line that caused the segmentation fault was line 25.
+2. To fix the program, you would need an & before the input like &input i.e (scanf("%d", &input)).
+3. The values returned, but not the sum not sum. This results in the code returning 0s which are incorrect and invalid.
+4. You fix this by returning values through reference and changing it so that the sum would be a pointer.
+
+* Assignment 2 * 
+1. Yes, the result is expected.
+2. No, the result is not expected. The bug is that it wrote over the previous HELLO! string with HI!hi! since there is no terminating value.
+3. The outcome is not expected. This is because there are spaces which would interfere with the strlen function and would return the wrong values for the for loop. 
