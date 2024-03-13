@@ -1,0 +1,17 @@
+* TPS 1 *
+1. Text segment: 0x00400000, Data segment: 0x10010000
+2. The basic code is closer to the actual machine code and the source code provides a higher level that is easier for the user to understand.
+3. 0x00000020, 32 bytes
+4. There are 8 columns for each address.
+5. Each column holds 4 bytes and since there are 8 columns the total bytes in the address is 32 bytes, which is also the difference between addresses.
+6. Add m:	.word 20 under the .data header.
+7. 0x10010004
+8. str1: .asciiz "I love CSE31!"
+9. 0x00000008 to 0x00000010
+10. The code is stored as hex values with the letters in reverse order. In this case: ovl I, SC e, !13E
+11. li      $v0, 1      syscall
+12. The line loads the address of n in to $t3
+
+* TPS 2 *
+1. There are too many combinations that would be complicated to differentiate between. In addition, they MIPS would run through all the code if they didn't fulfill the inequalities.
+2.
